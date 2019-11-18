@@ -1,0 +1,30 @@
+version: 0.2
+
+environment_variables:
+  plaintext:
+    key: "value"
+    key: "value"     
+phases:
+  install:
+    commands:
+      - command
+      - command
+  pre_build:
+    commands:
+      - command
+      - command
+  build:
+    commands:
+      - command
+      - command
+  post_build:
+    commands:
+      - command
+      - command
+artifacts:
+  files:
+    - file # 当前目录（输入的根目录）下的文件
+    - dir/file # 子目录下的文件
+    - dir/* # 子目录下的所有文件
+    - recursive-dir/**/* # 子目录下的所有文件夹和文件
+  discard-paths: no
